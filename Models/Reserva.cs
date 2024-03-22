@@ -1,3 +1,6 @@
+using System;
+using DesafioProjetoHospedagem.Models.Exceptions;
+
 namespace DesafioProjetoHospedagem.Models
 {
     public class Reserva
@@ -25,7 +28,7 @@ namespace DesafioProjetoHospedagem.Models
             {
                 // TODO: Retornar uma exception caso a capacidade seja menor que o número de hóspedes recebido
                 // *IMPLEMENTADO*
-                throw new ArgumentException("Capacidade inferior ao número de hóspedes recebido.");
+                throw new DomainException("Capacidade da Suite inferior ao número de hóspedes recebido.");
             }
         }
 
